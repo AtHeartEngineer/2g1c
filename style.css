@@ -1,0 +1,71 @@
+:root {
+  --blue: #BBEFFF;
+  --pink: #F896FD;
+  --orange: #F7837A;
+}
+
+@font-face {
+  font-family: "Blenny";
+  src: url("Blenny_Trial_Blk.ttf");
+}
+
+body {
+  height: 100%;
+  width: 100vw;
+  margin: 0px;
+  background: var(--blue);
+  box-shadow: inset 0 0 0px 1em var(--blue);
+  border-radius: 1em;
+}
+
+main {
+  height: calc(100vh - 10em);
+  display: flex;
+  background: white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-color: var(--blue);
+  border-radius: 1em;
+  border-width: 1em;
+  margin: 1em;
+  padding: 4em 0em;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80vw
+}
+
+#header h1 {
+  color: transparent;
+}
+
+#header img {
+  width: 90%;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Blenny";
+  font-size: 0em;
+  color: black;
+}
+
+#content {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+#content img {
+    max-height: 5em;
+    width: auto;
+}
+
+#content img.social {
+    max-height: 4em;
+}
+
