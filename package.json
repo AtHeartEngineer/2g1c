@@ -1,0 +1,20 @@
+{
+  "name": "2g1c-website",
+  "version": "1.0.0",
+  "description": "2 Girls 1 Cheese website",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx http-server -p 3001 -o",
+    "start": "npx http-server -p 3001",
+    "build": "echo 'Static site - no build step required'"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "keywords": [
+    "website",
+    "podcast"
+  ],
+  "author": "",
+  "license": "ISC"
+}
