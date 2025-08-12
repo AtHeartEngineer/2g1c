@@ -57,15 +57,71 @@ h1 {
 #content {
   display: flex;
   justify-content: space-evenly;
-  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2.5em;
+  padding: 0 4em;
 }
 
 #content img {
-    max-height: 5em;
-    width: auto;
+  max-height: 5em;
+  width: auto;
 }
 
 #content img.social {
-    max-height: 4em;
+  max-height: 4em;
 }
 
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+
+  #content {
+    gap: 2em;
+    padding: 0 2em;
+  }
+
+  #content img {
+    max-height: 4em;
+    max-width: 100%;
+  }
+
+  #content img.social {
+    max-height: 3.5em;
+  }
+
+  /* Make social links more touch-friendly */
+  #content a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+    min-width: 60px;
+  }
+}
+
+/* Extra small devices */
+@media screen and (max-width: 480px) {
+  #content {
+    gap: 1.5em;
+    padding: 0 1.5em;
+  }
+
+  #content img {
+    max-height: 3.5em;
+  }
+
+  #content img.social {
+    max-height: 3em;
+  }
+}
+
+/* Landscape orientation on mobile */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+
+  #content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+  }
+}
